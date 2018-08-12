@@ -2,9 +2,12 @@
 
 This is a Unity package that provides an alternative way to start a UXF Session. It can download a settings file from a public URL - allowing researching to remotely modify experiment settings to builds of experiments deployed outside the lab.
 
+To use this in your project download the latest [Release](https://github.com/jackbrookes/uxf-web-settings/releases/latest)
+
 ## Setup
 
-Add the `[UXF_Web_Settings]` prefab to your scene and add the reference to an instance of the `[UXF_Core]` prefab in your scene. See the example scene.
+1. Add the latest UXF package to your project
+2. Add the `[UXF_Web_Settings]` prefab to your scene and add the reference to an instance of the `[UXF_Core]` prefab in your scene. See the example scene.
 
 ## UI
 
