@@ -13,3 +13,4 @@ To use this in your project download the latest [Release](https://github.com/jac
 
 This package includes a UI similar to the default UXF UI but designed for end-users rather than researchers. Feel free to delete the UI and replace with one you feel appropriate for your project.
 
+![Screenshot](/screenshot.png)
