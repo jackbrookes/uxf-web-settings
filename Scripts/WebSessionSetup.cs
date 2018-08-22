@@ -51,6 +51,7 @@ namespace UXF_Web_Settings
             participantInfo.Add("ppid", ppid);
             participantInfo.Add("unique_device_id", SystemInfo.deviceUniqueIdentifier);
             participantInfo.Add("datetime", System.DateTime.Now.ToString());
+            participantInfo.Add("in_unity_editor", Application.isEditor);
 
             session.Begin(
                 experimentName,
