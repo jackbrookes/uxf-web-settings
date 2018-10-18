@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80a3d4d48c866d240a8717545ac997ea, type: 3}
   m_Name: test_settings
   m_EditorClassIdentifier: 
-  url: https://cdn.rawgit.com/jackbrookes/51b65076df0157522deaebb31265f97a/raw/09d96efe985ed02b95340bcef46ce49704527f7f/test_settings.json
+  url: https://api.myjson.com/bins/r65ls

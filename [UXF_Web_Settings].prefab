@@ -880,7 +880,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224980949083503246}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.93650794
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1168,6 +1168,7 @@ MonoBehaviour:
   experimentName: web_settings_test
   saveFolderName: UXF_Data
   diskSettingsName: web_settings.json
+  diskReleaseInfoName: release_info.json
   settingsUrl: {fileID: 11400000, guid: 5f6cdb539f398fa478e6f0be9d035d0b, type: 2}
   webUI: {fileID: 114037128118857288}
 --- !u!114 &114327257512348414
@@ -1617,7 +1618,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224535777911035174}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.6041667
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2472,7 +2473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &224699933420221726

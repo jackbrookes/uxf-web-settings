@@ -15,6 +15,8 @@ namespace UXF_Web_Settings
         // data goes Project folder (editor) or next to .exe file (build)
         public string saveFolderName = "UXF_Data"; 
         public string diskSettingsName = "web_settings.json";
+        // release info is supposed to be a json file that allows you to easily label 
+        public string diskReleaseInfoName = "release_info.json";
         public SettingsURL settingsUrl;
         
         [Space]
@@ -27,6 +29,11 @@ namespace UXF_Web_Settings
             get { return Path.Combine(Application.streamingAssetsPath, diskSettingsName); }
         }
 
+        string DiskReleaseInfoPath
+        {
+            get { return Path.Combine(Application.streamingAssetsPath, diskReleaseInfoName); }
+        }
+
         string SaveFolderPath
         {
             get
@@ -37,6 +44,18 @@ namespace UXF_Web_Settings
 
                 return saveFolderPath;
             }
+        }
+
+        /// <summary>
+        /// Called when the script is loaded or a value is changed in the
+        /// inspector (Called in the editor only).
+        /// </summary>
+        void OnValidate()
+        {
+            if (!File.Exists(DiskSettingsPath))
+                File.WriteAllText(DiskSettingsPath, "{}");
+            if (!File.Exists(DiskReleaseInfoPath))
+                File.WriteAllText(DiskReleaseInfoPath, "{}");
         }
 
         void Awake()
@@ -62,7 +81,10 @@ namespace UXF_Web_Settings
                 settings: new UXF.Settings(settings)
             );
 
-            session.WriteDictToSessionFolder(participantInfo, "participant_info");
+            if (!File.Exists(DiskReleaseInfoPath))
+                File.WriteAllText(DiskReleaseInfoPath, string.Empty);
+
+            session.CopyFileToSessionFolder(DiskReleaseInfoPath);
         }
 
         IEnumerator SetupSettings(string attemptUrl)
