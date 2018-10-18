@@ -81,10 +81,16 @@ namespace UXF_Web_Settings
                 settings: new UXF.Settings(settings)
             );
 
-            if (!File.Exists(DiskReleaseInfoPath))
-                File.WriteAllText(DiskReleaseInfoPath, string.Empty);
+            string ri = DiskReleaseInfoPath;
 
-            session.CopyFileToSessionFolder(DiskReleaseInfoPath);
+            if (!File.Exists(ri))
+                File.WriteAllText(ri, "{}");
+
+            string releaseInfoString = File.ReadAllText(ri);
+            var releaseInfo = (Dictionary<string, object>)MiniJSON.Json.Deserialize(releaseInfoString);
+            
+            session.WriteDictToSessionFolder(releaseInfo, diskReleaseInfoName.Replace(".json", string.Empty));
+            
         }
 
         IEnumerator SetupSettings(string attemptUrl)
