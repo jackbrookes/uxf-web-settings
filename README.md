@@ -1,6 +1,6 @@
 # UXF Web Settings
 
-This is a Unity package that provides an alternative way to start a UXF Session. It can download a settings file from a public URL - allowing researching to remotely modify experiment settings to builds of experiments deployed outside the lab.
+This is a Unity package that provides an alternative way to start a UXF Session. It can download a settings file from a public URL - allowing researchers to remotely modify experiment settings to builds of experiments deployed outside of a lab.
 
 To use this in your project download the latest [Release](https://github.com/jackbrookes/uxf-web-settings/releases/latest)
 
