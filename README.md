@@ -9,6 +9,8 @@ To use this in your project download the latest [Release](https://github.com/jac
 1. Add the latest UXF package to your project
 2. Add the `[UXF_Web_Settings]` prefab to your scene and add the reference to an instance of the `[UXF_Core]` prefab in your scene. See the example scene.
 
+You must host your settings file at a publicly acessible URL (e.g. Amazon S3 bucket) and enter the link in the web address asset.
+
 ## UI
 
 This package includes a UI similar to the default UXF UI but designed for end-users rather than researchers. Feel free to delete the UI and replace with one you feel appropriate for your project.
