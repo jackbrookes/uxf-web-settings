@@ -1,3 +1,5 @@
+NOTE: This is now incompatible with UXF 2.0. Current solution for web builds is to use the new Web AWS DynamoDB Data Handler.
+
 # UXF Web Settings
 
 This is a Unity package that provides an alternative way to start a UXF Session. It can download a settings file from a public URL - allowing researchers to remotely modify experiment settings to builds of experiments deployed outside of a lab.
